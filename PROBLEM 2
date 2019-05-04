@@ -1,0 +1,33 @@
+// Dioschwin N. Sumo
+// Section 1-12
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double gallon;
+	float balance;
+	double demandcharge;
+	float consumptioncharge;
+	double latecharge;
+	
+	demandcharge = 35;
+	consumptioncharge = 1.10;
+	latecharge = 20;
+	
+	cout << "Note: Water consumption is in Gallons!" << endl;
+	
+	cout << "Enter amount of water consumed: ";
+	cin >> gallon;
+	cout << "Enter unpaid balance: ";
+	cin >> balance;
+	
+	if (balance>0)
+	   cout << "Total Bill:  "	<< (demandcharge)+(gallon*consumptioncharge)+(balance+latecharge);
+	else
+		cout << "Total Bill:  " << (demandcharge)+(gallon*consumptioncharge);	  
+	return 0;
+	
+}
