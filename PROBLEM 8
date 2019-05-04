@@ -1,0 +1,22 @@
+// Dioschwin N. Sumo
+// Section 1-12
+// Problem 8
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int x,ctr;
+	
+	cout<<"Enter a number: ";
+	cin>>x;
+	cout << "Multiplication table of " << x << ":" << "\n" << endl;
+	
+		for(ctr=1;ctr<=10;ctr++)
+		{
+			cout<<ctr<<"*"<<x<<"="<<x*ctr<<endl;
+		}
+	
+	return 0;
+}
