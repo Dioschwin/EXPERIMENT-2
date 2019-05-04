@@ -1,0 +1,27 @@
+// Dioschwin N. Sumo
+// Section 1-12
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int ctr;
+	
+	cout << "Counting..." << endl;
+	
+		for(ctr=1;ctr<=10; ctr++)
+		{
+		  cout<<ctr<<",";
+		}
+		
+		for(ctr=11;ctr<=30; ctr++)
+		{
+			ctr+=1;
+			cout<<ctr<<",";
+		}
+		
+	return 0;
+	
+}
+
