@@ -1,0 +1,21 @@
+// Dioschwin N. Sumo
+// Section 1-12
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int ctr,n,largest=0;
+	for(ctr=0;ctr<3;ctr++)
+	{
+		cout<<"Enter number "<<ctr+1<<":";
+		cin>>n;
+		if(n>largest)
+		largest=n;
+	}
+	
+	cout<<"The largest number is: "<<largest;
+	
+	return 0;
+}
