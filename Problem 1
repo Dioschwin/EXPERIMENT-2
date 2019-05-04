@@ -1,0 +1,65 @@
+// Dioschwin N. Sumo 
+// Section: 1-12
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	char package;
+	double hours;
+	float billA, billB;
+	
+	cout << "\t \t" <<"Types of Packages Available:" << "\n" << endl;
+	cout << "Package A: For P995/mo, 10 hours of access. Additional hours are P20/hr."<<endl;
+	cout << "Package B: For P1495/mo, 20 hours of access. Additional hours are P10/hr."<<endl;
+	cout << "Package C: For P1995/mo, unlimited hours of access."<<"\n"<<endl;
+	
+	cout << "\t" << "Enter type of package purchased: ";
+	cin >> package;
+	cout << "\t" <<"Enter hours comsumed: ";
+	cin >> hours;
+	
+	billA = 995 + ((hours - 10) * 20);
+	billB = 1495 + ((hours - 20) * 10);
+	
+	switch (package)
+	{
+		case 'a':
+		case 'A':
+			
+			if (hours > 10)
+			cout << "Total Bill: Php " << billA;
+		else
+		    cout << "Total Bill: Php 995";
+		
+		break;
+		
+		case 'b':
+		case 'B':
+			
+			if (hours > 20)
+			cout << "Total Bill: Php " << billB;
+		else
+		    cout << "Total Bill: Php 1495";
+		
+		break;
+		
+		case 'c':
+		case 'C':
+			
+			cout << "Total Bill: Php 1995";
+		
+		break;
+		
+	default:
+		cout <<"Package not available!";
+		
+	}
+	
+	
+	return 0;
+	
+}
